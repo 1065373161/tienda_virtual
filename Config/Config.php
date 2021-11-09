@@ -20,7 +20,7 @@ const SPD = ".";
 const SPM = ",";
 
 //Simbolo de moneda
-const SMONEY = "$";
+const SMONEY = "ps";
 const CURRENCY = "peso";
 
 //Api PayPal
