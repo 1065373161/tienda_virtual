@@ -15,7 +15,7 @@ class Paginas extends Controllers
 	public function paginas()
 	{
 		if (empty($_SESSION['permisosMod']['r'])) {
-			header("Location:" . base_url() . '/dashboard');
+			header("Location:" . base_url() . '#c');
 		}
 		$data['page_tag'] = "Páginas";
 		$data['page_title'] = "PÁGINAS <small>willy's y su sabor</small>";
@@ -27,7 +27,7 @@ class Paginas extends Controllers
 	public function editar($idpost)
 	{
 		if (empty($_SESSION['permisosMod']['u'])) {
-			header("Location:" . base_url() . '/dashboard');
+			header("Location:" . base_url() . '#c');
 		}
 		$idpost = intval($idpost);
 		if ($idpost > 0) {
@@ -53,7 +53,7 @@ class Paginas extends Controllers
 	public function crear()
 	{
 		if (empty($_SESSION['permisosMod']['w'])) {
-			header("Location:" . base_url() . '/dashboard');
+			header("Location:" . base_url() . '#c');
 		}
 
 		$data['page_tag'] = "Crear página";
